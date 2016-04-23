@@ -9,3 +9,7 @@
   outline: 1px solid;
   float: left;
 }
+
+.fill {
+  background-color: #000;
+}

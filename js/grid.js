@@ -5,5 +5,19 @@ $(document).ready(function() {
     for (var j = 0; j < 16; j++) {
       $(".grid-container").append(html);
     }
+
   }
+
+  $(".grid-box").hover(function() {
+    $(this).addClass("fill");
+  });
+});
+
+
+$("#clear").click(function() {
+
+});
+
+$("#new").click(function() {
+
 });
