@@ -8,13 +8,19 @@ $(document).ready(function() {
 
   // Clear button
   $("#clear").click(function() {
-    gridSize = parseInt(prompt("Enter the desired size for the new grid between 0 and 100.", gridSize.toString()));
     spawnGrid(gridSize, random);
   });
 
   // Random button
   $("#random").click(function() {
     random = true;
+    gridSize = parseInt(prompt("Enter the desired size for the new grid between 0 and 100.", gridSize.toString()));
+    spawnGrid(gridSize, random);
+  });
+
+  // Black button
+  $("#black").click(function() {
+    random = false;
     gridSize = parseInt(prompt("Enter the desired size for the new grid between 0 and 100.", gridSize.toString()));
     spawnGrid(gridSize, random);
   });
