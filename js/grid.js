@@ -11,13 +11,15 @@ $(document).ready(function() {
   $(".grid-box").hover(function() {
     $(this).addClass("fill");
   });
-});
 
+  $("#clear").click(function() {
+    $(".grid-container").children(".grid-box").each(function() {
+      $(this).removeClass("fill");
+    });
+  });
 
-$("#clear").click(function() {
+  $("#new").click(function() {
 
-});
-
-$("#new").click(function() {
+  });
 
 });
